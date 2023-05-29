@@ -156,6 +156,39 @@ header {
     width: 100%;
 }
 
+.sub-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.sub-row {
+    max-width: 90rem;
+    width: 100%;
+}
+.sub-column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    border: 4px solid #03c5cd;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.sub-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sub-column>h2 {color: #03c5cd;}
+.sub-column>p {margin-bottom: 20px;}
+.sub-column>.btn {border: 4px solid #03c5cd;}
+
 .home {
     background-color: #f2f2f2;
     display: flex;
