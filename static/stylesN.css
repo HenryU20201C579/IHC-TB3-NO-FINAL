@@ -1,0 +1,152 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+}
+
+.banner {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    padding: 2%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info>h1 {
+    color: #03c5cd;
+}
+
+
+.entradas {
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+    justify-content: center;
+}
+.entradas>h2 {
+    padding: 2%;
+}
+
+
+.navbar-brand {
+    max-width: 25%;
+    height: auto;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.btn {
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px rgb(162, 205, 255);
+    font-weight: bold;
+}
+ .separator-type, .title-type, .intro-type, .content-type .intro-type p {
+     position: relative;
+ }
+
+ #product-header-section, .intro-type .container {
+     padding: 68px 15px 72px !important;
+ }
+ .container {
+     width: 1630px;
+ }
+ .parallax {
+     background-attachment: inherit !important;
+ }
+ .parallax {
+     background-attachment: inherit !important;
+     background-repeat: repeat;
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     width: 100%;
+     z-index: -10;
+ }
+ .company-heading h1 {
+     margin-bottom: 40px;
+     line-height: 80px;
+     color: #fff;
+     font-weight: 700 !important;
+     text-align: center;
+ }
+ .seo-header, .product-header, .intro-type .container h1.white, .company-heading h1 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 100 !important;
+     text-transform: capitalize;
+     font-size: 65px;
+     margin-bottom: 10px;
+     
+ }
+
+ .ct-u-size22 {
+     font-size: 22px;
+ }
+ .ct-u-fontWeight300 {
+     font-weight: 300;
+ }
+ .marginTop40 {
+     margin-top: 40px !important;
+ }
+ .ct-u-paddingBoth100 {
+     padding: 100px 15px;
+ }
+ .culture-section {
+     background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(https://img.freepik.com/fotos-premium/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-54051.jpg) top no-repeat;
+     /* background-color: #095c87; */
+     /* color: #fff; */
+ }
+ .company-sections, .careers-sections, .left-headquarter-section-img, .right-headquarter-section-img {
+     text-align: center;
+ }
+ .ct-u-paddingBoth100 {
+     padding: 100px 15px;
+ }
+ .company-sections h2, .careers-sections h2, .perks-section h2 {
+     font-weight: 800;
+     font-size: 52px;
+     
+ }
+
+
+ .slick-slide img {
+     display: inline-block;
+ }
+
+
+ .btn-solodev-red-reversed {
+     background-color: #fff;
+     color: #2872d2;
+     -webkit-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+     padding: 12px 35px;
+ }
+ .btn, .btn-blk {
+     font-size: 18px !Important;
+ }
+
+ .ct-u-paddingBottom100 {
+   margin-top: 40px;
+ }
+ .culture-section {
+   background-size: cover;
+   color: #fff;
+ }
