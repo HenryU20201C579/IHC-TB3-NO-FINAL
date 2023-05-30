@@ -26,6 +26,46 @@ header {
     grid-template-columns: 40% 60%;
     justify-content: space-between;
 }
+.info-struct {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-caracteristica {
+    margin-left: 100px;
+    max-width: 90rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+}
+
+.info-caracteristica>h1 {
+    color: #03c5cd;
+}
+
+.contact-form{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    max-width: 90rem;
+    width: 100%;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+}
+
+.contact-info>div>h1 {
+    color: #03c5cd;
+}
+
 .info {
     padding: 4%;
     width: 100%;
