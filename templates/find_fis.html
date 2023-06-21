@@ -1,0 +1,81 @@
+{%include 'imports/header.html'%}
+
+    <div class="container my-4">
+      <h3>Encuentre un fisioterapeuta</h3>
+      <form>
+        <div class="mb-3">
+          <label for="searchBar" class="form-label">Buscar por nombres o apellidos</label>
+          <input type="text" class="form-control" id="searchBar">
+        </div>
+        <form>
+            <div class="form-group">
+              <label for="district">Seleccione su distrito:</label>
+              <select class="form-control" id="district">
+                <option value="">--Seleccionar--</option>
+                <option value="barranco">Barranco</option>
+                <option value="callao">Callao</option>
+                <option value="lince">Lince</option>
+                <option value="lurin">Lurín</option>
+                <option value="miraflores">Miraflores</option>
+                <option value="rimac">Rímac</option>
+                <option value="sanborja">San Borja</option>
+                <option value="sanisidro">San Isidro</option>
+                <option value="sjl">San Juan de Lurigancho</option>
+                <option value="surco">Santiago de Surco</option>
+                <!-- Añade más distritos según sea necesario -->
+              </select>
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+              <label for="time-slot">Seleccione su día de preferencia:</label>
+              <select class="form-control" id="time-slot">
+                <option value="">--Seleccionar--</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+              </select>
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+              <label for="time-slot">Seleccione su horario preferido:</label>
+              <select class="form-control" id="time-slot">
+                <option value="">--Seleccionar--</option>
+                <option value="morning">Mañana (7:00 - 12:00)</option>
+                <option value="afternoon">Tarde (12:00 - 18:00)</option>
+                <option value="evening">Noche (18:00 - 9:00)</option>
+              </select>
+            </div>
+        </form>
+        <div class="mb-3">
+          <label class="form-label">Puede marcar una especilidad:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="activity1">
+            <label class="form-check-label" for="activity1">Rehabilitación deportiva</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="activity2">
+            <label class="form-check-label" for="activity2">Rehabilitación neurológica</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="activity1">
+            <label class="form-check-label" for="activity1">Terapia manual ortopédica</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="activity1">
+            <label class="form-check-label" for="activity1">Terapia de dolor crónico</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+
+      <div id="volunteerList" class="mt-5">
+        <!-- lista de fisioterapeuta -->
+      </div>
+    </div>
+    {%include 'imports/footer.html'%}

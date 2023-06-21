@@ -1,0 +1,59 @@
+{%include 'imports/header.html'%}
+    
+
+    <div class="container">
+      <div class="title">Crea tu cuenta</div>
+      <form action="#">
+          <div class="user_details">
+              <div class="input_pox">
+                  <span class="datails">Nombre</span>
+                  <input type="text" placeholder="ingresa tu nombre" required>
+              </div>
+              <div class="input_pox">
+                  <span class="datails">Apellido</span>
+                  <input type="text" placeholder="ingresa tu apellido" required>
+              </div>
+              <div class="input_pox">
+                  <span class="datails">Correo</span>
+                  <input type="text" placeholder="ingresa tu correo" required>
+              </div>
+              <div class="input_pox">
+                  <span class="datails">Numero</span>
+                  <input type="text" placeholder="ingresa tu numero de telefono" required>
+              </div>
+              <div class="input_pox">
+                  <span class="datails">Contraseña</span>
+                  <input type="text" placeholder="ingresa tu contraseña" required>
+              </div>
+              <div class="input_pox">
+                  <span class="datails">Confirma tu contraseña</span>
+                  <input type="text" placeholder="Confirma tu contraseña anterior" required>
+              </div>
+          </div>
+          <div class="gender_details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="gender_title">Elige</span>
+              <div class="category">
+                  <label for="dot-1">
+                      <span class="dot one"></span>
+                      <span class="gender">Experto</span>
+                  </label>
+                  <label for="dot-2">
+                      <span class="dot two"></span>
+                      <span class="gender">Voluntario</span>
+                  </label>
+                  <label for="dot-3">
+                      <span class="dot three"></span>
+                      <span class="gender">Adulto mayor</span>
+                  </label>
+              </div>
+          </div>
+          <div class="button">
+              <input type="submit" value="Resgistrarme">
+          </div>
+      </form>
+  </div>
+
+  {%include 'imports/footer.html'%}

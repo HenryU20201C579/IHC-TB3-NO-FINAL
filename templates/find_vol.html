@@ -1,0 +1,87 @@
+{%include 'imports/header.html'%}
+
+<div class="container my-4">
+      <h3>Encuentre un voluntario</h3>
+      <form action="resultados" method="post">
+        <div class="mb-3">
+          <label for="searchBar" class="form-label">Ingresar tu nombre</label>
+          <input type="text" class="form-control" id="searchBar" name = "name">
+        </div>
+            <div class="form-group">
+              <label for="district">Seleccione su distrito:</label>
+              <select class="form-control" id="district" name = "distrito">
+                <option value="">--Seleccionar--</option>
+                <option value="barranco">Barranco</option>
+                <option value="callao">Callao</option>
+                <option value="lince">Lince</option>
+                <option value="lurin">Lurín</option>
+                <option value="miraflores">Miraflores</option>
+                <option value="rimac">Rímac</option>
+                <option value="sanborja">San Borja</option>
+                <option value="sanisidro">San Isidro</option>
+                <option value="sjl">San Juan de Lurigancho</option>
+                <option value="surco">Santiago de Surco</option>
+                <!-- Añade más distritos según sea necesario -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="time-slot">Seleccione su día de preferencia:</label>
+              <select class="form-control" id="time-slot" name = "dia">
+                <option value="">--Seleccionar--</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="time-slot">Seleccione su horario preferido:</label>
+              <select class="form-control" id="time-slot" name = "horario">
+                <option value="">--Seleccionar--</option>
+                <option value="morning">Mañana (7:00 - 12:00)</option>
+                <option value="afternoon">Tarde (12:00 - 18:00)</option>
+                <option value="evening">Noche (18:00 - 9:00)</option>
+              </select>
+            </div>
+        <div class="mb-3">
+          <label class="form-label">Marque sus actividades preferidas:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Pasear al aire libre" id="Pasear al aire libre" name = "Pasear al aire libre">
+            <label class="form-check-label" for="Pasear al aire libre">Pasear al aire libre</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Hacer ejercicio" id="Hacer ejercicio" name = "Hacer ejercicio">
+            <label class="form-check-label" for="Hacer ejercicio">Hacer ejercicio</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Cocinar" id="Cocinar" name = "Cocinar">
+            <label class="form-check-label" for="Cocinar">Cocinar</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Artesanía o manualidades" id="Artesanía o manualidades" name = "Artesanía o manualidades">
+            <label class="form-check-label" for="Artesanía o manualidades">Artesanía o manualidades</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Jardinería" id="Jardinería" name= "Jardinería">
+            <label class="form-check-label" for="Jardinería">Jardinería</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Lectura" id="Lectura" name = "Lectura">
+            <label class="form-check-label" for="Lectura">Lectura</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+
+      <div id="volunteerList" class="mt-5">
+        <!-- lista de voluntarios -->
+      </div>
+      
+    </div>
+    
+    
+
+{%include 'imports/footer.html'%}

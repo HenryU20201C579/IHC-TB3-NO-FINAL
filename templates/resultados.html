@@ -1,0 +1,31 @@
+{%include 'imports/header.html'%}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Dias</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Hora de inicio</th>
+        <th scope="col">Hora de termino</th>
+        <th scope="col">Distrito</th>
+        <th scope="col">Actividades</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Las filas de esta tabla se llenarían con los datos del ejercicio del usuario -->
+      {% for var in resultados %}
+      <tr>
+        <!-- <td>{{var[0]}}</td> -->
+        <td>{{var[0]}}</td>
+        <td>{{var[1]}}</td>
+        <td>{{var[2]}}</td>
+        <td>{{var[3]}}</td>
+        <td>{{var[4]}}</td>
+        <td>{{var[5]}}</td>
+        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{%include 'imports/footer.html'%}

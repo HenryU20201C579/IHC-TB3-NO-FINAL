@@ -1,0 +1,47 @@
+{%include 'imports/header.html'%}
+
+
+    
+    <section class="login-container">
+      <article class="form-container">
+        <div class="intro">
+          <h1>!Bienvenido de vuelta!</h1>
+          <p>Ingresa tu correo y contraseña por favor</p>
+        </div>
+
+        <form onsubmit="return false;" class="form">
+          <div class="email-input">
+            <span class="material-icons-round icon-size"> Correo elec </span>
+            <span id="seperator"></span>
+            <div class="input-container">
+              <input type="email" name="usermail" id="email" />
+            </div>
+          </div>
+
+          <div class="email-input">
+            <span class="material-icons-round icon-size"> Contraseña </span>
+            <span id="seperator"></span>
+            <div class="input-container">
+              <input type="password" name="userpass" id="password" />
+            </div>
+          </div>
+
+          <button id="submit">Continuar</button>
+        </form>
+
+        <article class="outro">
+          <div class="ending">
+            <p>Continuar con </p>
+          </div>
+
+          <div class="socials">
+            <a class="social-btn" href="" id="g-btn"><p>Google</p></a>
+            <a class="social-btn" href="" id="a-btn"><p>Apple</p></a>
+            <a class="social-btn" href="" id="fb-btn"><p>Facebook</p></a>
+          </div>
+        </article>
+      </article>
+      <article class="login-side-bg"></article>
+    </section>
+
+    {%include 'imports/footer.html'%}

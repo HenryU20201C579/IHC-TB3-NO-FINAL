@@ -255,7 +255,9 @@ body{
 	text-align: center;
 	color: #7980a3;
   }
-
+  .form-group {
+    margin-bottom: 1rem;
+  }
 
   /* FOOTER */
   .bg-footer {
@@ -460,7 +462,7 @@ img{
  }
  
  .container .team .member img {
-   width: 80px;
+   width: 100%;
  }
  
  .container .team .member h3 {
@@ -497,7 +499,7 @@ img{
    background: #00bcd4;
    color: #fff;
  }
- 
+
   /* SINGIN */
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
 
@@ -846,3 +848,5 @@ form .button input :hover{
      width: 0;
     }
 }
+
+/* tabla */

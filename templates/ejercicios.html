@@ -1,0 +1,50 @@
+{%include 'imports/header.html'%}
+
+<div class="container">
+        <h1 class="text-center mt-4">Registro de Ejercicios</h1>
+        <form action = "/saveDataEjercicios" method="post">
+          <div class="mb-3">
+            <label for="exerciseName" class="form-label">Nombre del Ejercicio</label>
+            <input type="text" class="form-control" id="exerciseName" placeholder="Ej. Sentadillas" name = "ejercicio">
+          </div>
+          <div class="mb-3">
+            <label for="reps" class="form-label">Repeticiones</label>
+            <input type="number" class="form-control" id="reps" placeholder="Ej. 15" name = "repeticiones">
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Fecha del Ejercicio</label>
+            <input type="date" class="form-control" id="date" name = "fecha">
+          </div>
+          <button type="submit" class="btn btn-primary">Registrar Ejercicio</button>
+        </form>
+        <h2 class="text-center mt-5">Historial de Ejercicios</h2>
+        <!-- Aquí es donde aparecerían los ejercicios registrados -->
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre del Ejercicio</th>
+              <th scope="col">Repeticiones</th>
+              <th scope="col">Fecha del Ejercicio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las filas de esta tabla se llenarían con los datos del ejercicio del usuario -->
+            {% for var in ejercicios %}
+            <tr>
+              <!-- <td>{{var[0]}}</td> -->
+              <td>{{var[0]}}</td>
+              <td>{{var[1]}}</td>
+              <td>{{var[2]}}</td>
+              
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+</div>
+
+
+        
+
+    {%include 'imports/footer.html'%}

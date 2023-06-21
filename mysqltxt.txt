@@ -1,0 +1,28 @@
+VOLUNTARIO:
+CREATE TABLE voluntarios (
+    dias varchar(255),
+    nombre varchar(255),
+    hora_inicio time,
+    hora_final time,
+    distrito varchar(255),
+    actividades varchar(255)
+);
+
+INSERT INTO  voluntario
+VALUES ("Lunes", "Henry", 16, "Lince", "Pasear al aire libre");
+
+delete from voluntarios where nombre='' OR nombre IS NULL;
+select * from voluntarios where nombre = "henry" and dias = "martes";
+select * from voluntarios where nombre = "henry" intersect select * from voluntarios where distrito = "";
+----------------------------
+
+TABLA DE EJERCICIOS:
+CREATE TABLE ejercicios (
+    ejercicio varchar(255),
+    repeticiones int,
+    fecha date
+);
+
+INSERT INTO  ejercicios
+VALUES ("planchas", 15, "2023-06-15");
+

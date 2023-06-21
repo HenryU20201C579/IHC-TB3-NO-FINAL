@@ -1,0 +1,23 @@
+{%include 'imports/header.html'%}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del Ejercicio</th>
+        <th scope="col">Repeticiones</th>
+        <th scope="col">Fecha del Ejercicio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Las filas de esta tabla se llenarían con los datos del ejercicio del usuario -->
+      {% for var in ejercicios %}
+      <tr>
+        <!-- <td>{{var[0]}}</td> -->
+        <td>{{var[0]}}</td>
+        <td>{{var[1]}}</td>
+        <td>{{var[2]}}</td>
+        
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {%include 'imports/footer.html'%}

@@ -1,0 +1,111 @@
+{%include 'imports/header.html'%}
+
+<div class="container my-4">
+        <h1 class="text-center mt-4">Registro de Disponibilidad de Voluntariado</h1>
+        <form action="saveDataVoluntario" method="post">
+            <div class="mb-3">
+                <label for="searchBar" class="form-label">Ingresar tu nombre</label>
+                <input type="text" class="form-control" id="searchBar" name = "name">
+              </div>
+
+              <div class="form-group">
+                <label for="district">Seleccione su distrito:</label>
+                <select class="form-control" id="district" name = "distrito">
+                  <option value="">--Seleccionar--</option>
+                  <option value="barranco">Barranco</option>
+                  <option value="callao">Callao</option>
+                  <option value="lince">Lince</option>
+                  <option value="lurin">Lurín</option>
+                  <option value="miraflores">Miraflores</option>
+                  <option value="rimac">Rímac</option>
+                  <option value="sanborja">San Borja</option>
+                  <option value="sanisidro">San Isidro</option>
+                  <option value="sjl">San Juan de Lurigancho</option>
+                  <option value="surco">Santiago de Surco</option>
+                </select>
+              </div>
+
+            <div class="mb-3">
+                <label class="form-label">Días disponibles</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="lunes" id="lunes" name = "lunes">
+                    <label class="form-check-label" for="lunes">
+                        Lunes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="martes" id="martes" name = "martes">
+                    <label class="form-check-label" for="martes">
+                        Martes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="miercoles" id="miercoles" name = "miercoles">
+                    <label class="form-check-label" for="miercoles">
+                        Miércoles
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="jueves" id="jueves" name = "jueves">
+                    <label class="form-check-label" for="jueves">
+                        Jueves
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="viernes" id="viernes" name = "viernes">
+                    <label class="form-check-label" for="viernes">
+                        Viernes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="sabado" id="sabado" name = "sabado">
+                    <label class="form-check-label" for="sabado">
+                        Sábado
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="domingo" id="domingo" name = "domingo">
+                    <label class="form-check-label" for="domingo">
+                        Domingo
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="startTime" class="form-label">Hora de inicio de disponibilidad</label>
+                <input type="time" class="form-control" id="startTime" name = "hora_inicio">
+            </div>
+            <div class="mb-3">
+                <label for="endTime" class="form-label">Hora de fin de disponibilidad</label>
+                <input type="time" class="form-control" id="endTime" name = "hora_final">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Marque las actividades que ofrece:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Pasear al aire libre" id = "Pasear al aire libre" name = "Pasear al aire libre">
+                  <label class="form-check-label" for="Pasear al aire libre">Pasear al aire libre</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Hacer ejercicio" id = "Hacer ejercicio" name = "Hacer ejercicio">
+                  <label class="form-check-label" for="Hacer ejercicio">Hacer ejercicio</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cocinar" id = "Cocinar" name = "Cocinar">
+                  <label class="form-check-label" for="Cocinar">Cocinar</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Artesanía o manualidades" id = "Artesanía o manualidades" name = "Artesanía o manualidades">
+                  <label class="form-check-label" for="Artesanía o manualidades">Artesanía o manualidades</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Jardinería" id = "Jardinería" name = "Jardinería">
+                  <label class="form-check-label" for="Jardinería">Jardinería</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Lectura" id = "Lectura" name = "Lectura">
+                  <label class="form-check-label" for="Lectura">Lectura</label>
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    {%include 'imports/footer.html'%}
