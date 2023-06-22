@@ -26,3 +26,18 @@ CREATE TABLE ejercicios (
 INSERT INTO  ejercicios
 VALUES ("planchas", 15, "2023-06-15");
 
+-----------------------------
+
+Fisioterapeuta:
+CREATE TABLE fisioterapeuta (
+    nombre varchar(255),
+    distrito varchar(255),
+    dias varchar(255),
+    hora_inicio time,
+    hora_final time,
+    especializacion varchar(255),
+    certificaciones varchar(255)
+);
+
+INSERT INTO  fisioterapeuta
+VALUES ("Henry", "Lince", "Lunes", "11:55:00", "12:55:00", "descontracturas", "upc");

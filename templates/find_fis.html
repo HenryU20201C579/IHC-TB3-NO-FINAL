@@ -2,15 +2,14 @@
 
     <div class="container my-4">
       <h3>Encuentre un fisioterapeuta</h3>
-      <form>
+      <form action = "resultados_fis" method="post">
         <div class="mb-3">
-          <label for="searchBar" class="form-label">Buscar por nombres o apellidos</label>
-          <input type="text" class="form-control" id="searchBar">
+          <label for="searchBar" class="form-label">Ingresar tu nombre</label>
+          <input type="text" class="form-control" id="searchBar" name = "name">
         </div>
-        <form>
             <div class="form-group">
               <label for="district">Seleccione su distrito:</label>
-              <select class="form-control" id="district">
+              <select class="form-control" id="district" name = "distrito">
                 <option value="">--Seleccionar--</option>
                 <option value="barranco">Barranco</option>
                 <option value="callao">Callao</option>
@@ -25,11 +24,9 @@
                 <!-- Añade más distritos según sea necesario -->
               </select>
             </div>
-        </form>
-        <form>
             <div class="form-group">
               <label for="time-slot">Seleccione su día de preferencia:</label>
-              <select class="form-control" id="time-slot">
+              <select class="form-control" id="time-slot" name = "dia">
                 <option value="">--Seleccionar--</option>
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
@@ -40,18 +37,15 @@
                 <option value="domingo">Domingo</option>
               </select>
             </div>
-        </form>
-        <form>
             <div class="form-group">
               <label for="time-slot">Seleccione su horario preferido:</label>
-              <select class="form-control" id="time-slot">
+              <select class="form-control" id="time-slot" name = "horario">
                 <option value="">--Seleccionar--</option>
                 <option value="morning">Mañana (7:00 - 12:00)</option>
                 <option value="afternoon">Tarde (12:00 - 18:00)</option>
                 <option value="evening">Noche (18:00 - 9:00)</option>
               </select>
             </div>
-        </form>
         <div class="mb-3">
           <label class="form-label">Puede marcar una especilidad:</label>
           <div class="form-check">
@@ -72,7 +66,6 @@
           </div>
         </div>
         <button type="submit" class="btn btn-primary">Buscar</button>
-      </form>
 
       <div id="volunteerList" class="mt-5">
         <!-- lista de fisioterapeuta -->
